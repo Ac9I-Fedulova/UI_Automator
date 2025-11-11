@@ -71,7 +71,7 @@ class ChangeTextTest {
         waitForPackage(packageName)
 
         // пустое поле
-        device.findObject(By.res(packageName, "userInput")).text = ""
+        device.findObject(By.res(packageName, "userInput")).setText("")
         device.findObject(By.res(packageName, "buttonChange")).click()
 
         val result1 = device.findObject(By.res(packageName, "textToBeChanged")).text
